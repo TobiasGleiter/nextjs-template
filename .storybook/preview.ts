@@ -1,6 +1,4 @@
 import '../app/globals.css';
-// .storybook/preview.js
-import '../app/globals.css'; // replace with the name of your tailwind css file
 
 // default pixel breakpoints
 const BREAKPOINTS_INT = {
