@@ -1,4 +1,4 @@
-# Next.js 13 Template Overview
+# nextjs13-ts-tailwind-husky-eslint-template
 
 This is a [Next.js](https://nextjs.org/) template with following addons:
 
@@ -33,8 +33,6 @@ If you intend to use `yarn dev`, you need to update the `engines` field in the `
     "yarn": "YOUR-YARN-VERSION"
 },
 ```
-
-# nextjs13-ts-tailwind-husky-eslint-template
 
 ## Storybook
 
