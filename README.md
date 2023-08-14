@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) template with following addons:
 - [Tailwindcss](https://tailwindcss.com/)
 - [Storybook](https://storybook.js.org/)
 
-Furthermore this Project Template is optimized for VisualStudio code with the Prettier extension.
+Furthermore, this project template is optimized for Visual Studio Code with the Prettier extension.
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-If you want to use `yarn dev` you have to change in the `package.json` the engines to your yarn version:
+If you intend to use `yarn dev`, you need to update the `engines` field in the `package.json` to match your Yarn version:
 
 ```JSON
 "engines": {
@@ -38,7 +38,7 @@ If you want to use `yarn dev` you have to change in the `package.json` the engin
 
 ## Storybook
 
-Storybook is a tool to design components independent from your website.
+Storybook is an npm package and a popular open-source tool used by developers to build, test, and showcase individual UI components in isolation. It provides a dedicated environment where developers can create interactive and isolated stories for each component, making it easier to visualize, develop, and iterate on various UI elements independently of the larger application. This helps ensure consistent design and behavior while facilitating collaboration between designers and developers.
 
 ### Run Storybook
 
@@ -50,34 +50,39 @@ npm run storybook
 
 ### Storybook workflow
 
-To create a new component follow these steps:
+To create a new component, follow these steps:
 
-- Locate the `components/template` folder
-- copy the e.g `base` folder
-- create new (superior) folder in components e.g. `modals`
-- paste the `base` folder into the new folder
-- change the names of the four files from `BaseTemplate` e.g. into `BaseModal`
-- replace all `BaseTemplate` words in the four files via search in folder and replace all (17 occurencies)
-- locate the file e.g. `BaseModal.stories.tsx` and change the at `title: 'templates/BaseTemplate'` the `templates` keyword in to the category name you like e.g. `title: 'modals/BaseModals'`
+- Locate the `components/template` folder.
+- Copy the `base` folder (for example).
+- Create a new parent folder within the `components` directory, e.g., `modals`.
+- Paste the previously copied `base` folder into the new `modals` folder.
+- Rename the four files inside the copied folder, replacing `BaseTemplate` with a new name like `BaseModal`.
+- Use a search within the folder to replace all occurrences (17 instances) of `BaseTemplate` with the new name (e.g., `BaseModal`).
+- Find the file `BaseModal.stories.tsx` and modify the `title` field from `templates/BaseTemplate` to match your preferred category name, such as `modals/BaseModals`.
 
 ## Github and Husky
 
-There are three main rules created with husky:
+Husky is a tool that allows developers to automate tasks and enforce best practices by running scripts or commands at certain Git lifecycle events, such as before a commit (pre-commit), before a push (pre-push), or when a commit message is being created (commit-msg). These scripts can include actions like code linting, formatting checks, running tests, or any other custom tasks you want to perform before or after specific Git actions. Husky ensures that developers follow a consistent and high-quality development process.
 
-- commit-msg
-- pre-comit
-- pre-push
-  To handle errors before commit or push.
-  The typical workflow with git is:
-- `git add .` to add the current folders or `git add [filename | dir]` to add filename or dir directly.
-- `git commit -m "[commit type]:[custom commit text]"` to commit. Commit types an be found under `commitlint.config.js`, e.g. `git commit -m "feat: created new base modal"`. Git commit will automaticly pre-check the code and check if the commit type is valid.
-- `git push` to push to the remote repository. git push will automaticly pre-build, only if success push.
-  The commit types can be found in the `commitlint.config.js`
+There are three main rules created with Husky:
+
+- `commit-msg`
+- `pre-commit`
+- `pre-push`
+
+To handle errors before commit or push, the typical git workflow is as follows:
+
+- Use `git add .` to add the current folders, or `git add [filename | dir]` to add a specific file or directory directly.
+- Employ `git commit -m "[commit type]:[custom commit text]"` for committing. You can find commit types listed in `commitlint.config.js`, for instance, `git commit -m "feat: created new base modal"`. Git commit will automatically pre-check the code and verify if the commit type is valid.
+- Use `git push` to push changes to the remote repository. Git push will automatically pre-build, proceeding only if the push is successful.
+
+The available commit types can be found in the `commitlint.config.js`.
 
 ## ESLint and CommitLint
 
-ESLint and CommitLint settings can be found in `.eslintrc.json` and `commitlint.config.json`.
-If there is an "no-unused-vars" warning in commit/eslint you can underscore the variable until it is used.
+ESLint and CommitLint settings can be located in `.eslintrc.json` and `commitlint.config.json`.
+
+If you encounter a "no-unused-vars" warning in commit or ESLint, you can prefix the variable name with an underscore (`_`) until it is used.
 
 ## Folder structure
 
