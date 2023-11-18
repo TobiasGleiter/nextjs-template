@@ -1,12 +1,15 @@
 {
+  "plugins": ["cypress"],
   "extends": [
     "plugin:storybook/recommended",
     "next",
     "next/core-web-vitals",
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:cypress/recommended"
   ],
   "globals": {
-    "React": "readonly"
+    "React": "readonly",
+    "cypress/globals": true
   },
   // New
   "overrides": [
@@ -19,6 +22,7 @@
     }
   ],
   "rules": {
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }] // underscore variables when they are unsued but going to be used
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }], // underscore variables when they are unsued but going to be used
+    "jest/expect-expect": "off"
   }
 }

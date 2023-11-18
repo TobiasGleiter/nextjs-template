@@ -8,7 +8,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.17.1
-          nom-version: 9.6.7
+          npm-version: 9.6.7
       - run: npm install
       - run: npm run lint
       - run: npm run build
+
+      - name: Run Cypress Tests
+        run: npm run component:headless
