@@ -1,13 +1,14 @@
 import type { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
-  stories: ['../**/*.stories.@(js|jsx|ts|tsx)'], // for mdx files: '../**/*.stories.mdx',
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'], // for mdx files: '../**/*.stories.mdx',
   staticDirs: ['../public'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    'storybook-addon-next-router',
     {
       name: '@storybook/addon-styling',
       options: {

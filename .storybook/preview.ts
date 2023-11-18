@@ -1,3 +1,4 @@
+import { AppRouterContext } from 'next/dist/shared/lib/app-router-context';
 import '../app/globals.css';
 
 // default pixel breakpoints
@@ -34,4 +35,8 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  nextRouter: {
+    Provider: AppRouterContext.Provider, // next 13 next 13 (using next/navigation)
+    // Provider: RouterContext.Provider, // next 13 (using next/router) / next < 12
+  },
 };
