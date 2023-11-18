@@ -1,5 +1,6 @@
 # nextjs13-ts-tailwind-husky-eslint-template
 
+Test
 This is a [Next.js](https://nextjs.org/) template with following addons:
 
 - [TypeScript](https://www.typescriptlang.org/), [ESLint](https://eslint.org/) and [Husky](https://typicode.github.io/husky/)
