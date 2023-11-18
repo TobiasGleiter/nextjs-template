@@ -1,6 +1,5 @@
 # nextjs13-ts-tailwind-husky-eslint-template
 
-Test
 This is a [Next.js](https://nextjs.org/) template with following addons:
 
 - [TypeScript](https://www.typescriptlang.org/), [ESLint](https://eslint.org/) and [Husky](https://typicode.github.io/husky/)
@@ -74,6 +73,8 @@ To handle errors before commit or push, the typical git workflow is as follows:
 - Use `git add .` to add the current folders, or `git add [filename | dir]` to add a specific file or directory directly.
 - Employ `git commit -m "[commit type]:[custom commit text]"` for committing. You can find commit types listed in `commitlint.config.js`, for instance, `git commit -m "feat: created new base modal"`. Git commit will automatically pre-check the code and verify if the commit type is valid.
 - Use `git push` to push changes to the remote repository. Git push will automatically pre-build, proceeding only if the push is successful.
+- There is also a yaml file with a github workflow which tests the branch automatically on github side.
+- Besides that, the main branch is locked and can only merged with a pull request from github
 
 The available commit types can be found in the `commitlint.config.js`.
 
