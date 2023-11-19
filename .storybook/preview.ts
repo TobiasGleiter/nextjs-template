@@ -1,5 +1,5 @@
 import { AppRouterContext } from 'next/dist/shared/lib/app-router-context';
-import '../app/globals.css';
+import '../src/app/globals.css';
 
 // default pixel breakpoints
 const BREAKPOINTS_INT = {
