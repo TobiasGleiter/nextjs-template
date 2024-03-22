@@ -23,11 +23,11 @@ export default function Logo() {
                 viewBox="0 0 24 24"
                 fill="#ffffff"
                 stroke="#1e1e1e"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="lucide lucide-app-window"
-                fill-opacity="0.9"
+                fillOpacity="0.9"
               >
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="M10 4v4" />

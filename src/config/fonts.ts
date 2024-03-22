@@ -1,4 +1,4 @@
-import { Raleway as FontHeading, Exo as FontSans } from 'next/font/google';
+import { Raleway as FontHeading, Inter as FontSans } from 'next/font/google';
 
 export const fontSans = FontSans({
   subsets: ['latin'],
