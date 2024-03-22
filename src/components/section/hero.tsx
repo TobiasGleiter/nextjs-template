@@ -21,11 +21,10 @@ export default function Hero() {
             <span className="font-bold">Get This Template</span>
           </Button>
           <p className="text-sm md:text-base flex justify-center items-center gap-2">
-            Be the first, build with it what you want.
+            Be the first, build what you want.
           </p>
         </div>
       </div>
-      <div>{/** IMAGE */}</div>
     </section>
   );
 }

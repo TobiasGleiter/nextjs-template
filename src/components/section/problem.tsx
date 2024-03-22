@@ -1,8 +1,8 @@
 export default function Problem() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-center ">
-      <div className="flex flex-col gap-4 font-bold items-center max-w-lg bg-secondary rounded-md p-8 md:p-16">
-        <ul className="flex flex-col gap-2 text-center">
+    <div className="flex flex-col gap-4 items-center justify-center">
+      <div className="flex flex-col gap-6 font-bold items-center w-full bg-secondary py-8 rounded-md p-8 md:p-16">
+        <ul className="flex flex-col gap-2 text-center text-lg">
           <li>
             <span className="font-bold text-red-600">1 hr</span> to setup
             Next.js Template
