@@ -5,3 +5,5 @@
 - Cypress and GitHub Actions
 
 Feel free to use this template!
+
+![banner](https://github.com/TobiasGleiter/nextjs-template/blob/main/public/example.png)
