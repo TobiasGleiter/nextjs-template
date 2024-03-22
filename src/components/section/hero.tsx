@@ -18,7 +18,7 @@ export default function Hero() {
             className={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
           >
             <Logo />
-            <span>Get This Template</span>
+            <span className="font-bold">Get This Template</span>
           </Button>
           <p className="text-sm md:text-base flex justify-center items-center gap-2">
             Be the first, build with it what you want.
