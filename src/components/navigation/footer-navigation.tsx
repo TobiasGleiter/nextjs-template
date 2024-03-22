@@ -4,13 +4,13 @@ import Logo from '../image/logo/logo';
 
 export default function FooterNavigation() {
   return (
-    <footer className="flex flex-col gap-4 my-8 mt-48">
-      <div className="w-full bg-muted h-[1px]" />
+    <footer className="flex flex-col mt-48">
+      <div className="w-full bg-muted h-[1px] mb-24" />
       <div className="flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-80 max-w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <div className="flex items-center">
+          <div className="flex gap-2 justify-center md:justify-start items-center">
             <Logo />
-            <span>{CompanyName}</span>
+            <span className="font-bold text-sm">{CompanyName}</span>
           </div>
           <p className="mt-3 text-sm text-base-content/80 leading-relaxed">
             © 202X - All rights reserved
