@@ -6,7 +6,7 @@ import { buttonVariants } from '../ui/button';
 
 export default function NavigationBar() {
   return (
-    <div className="flex w-full items-center justify-between py-4">
+    <div className="hidden md:flex w-full items-center justify-between py-4">
       <div className="flex gap-2 items-center">
         <Logo />
         <span className="font-heading font-bold">{CompanyName}</span>

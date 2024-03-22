@@ -1,5 +1,5 @@
-import FooterNavigation from '@/src/components/navigation/footer-navigation';
-import MainNavigation from '@/src/components/navigation/main-naviagtion';
+import FooterNavigation from '@/src/components/navigation/footer';
+import MainNavigation from '@/src/components/navigation/main';
 
 interface HomeLayoutProps {
   children: React.ReactNode;
