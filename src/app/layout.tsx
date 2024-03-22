@@ -1,21 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+
+import { fontHeading, fontSans } from '../config/fonts';
 import { cn } from '../lib/utils';
 import './globals.css';
 import Providers from './providers';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Next App Template',
   description: 'Setup by Tobias Gleiter',
 };
 
-/**
- * Root Layout of the application
- * @param children
- * @returns
- */
 export default function RootLayout({
   children,
 }: {
@@ -23,7 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>
+      <body
+        className={cn(
+          fontSans.variable,
+          fontHeading.variable,
+          'font-sans antialiased'
+        )}
+      >
         <Providers>
           <main className="flex-1">{children}</main>
         </Providers>
